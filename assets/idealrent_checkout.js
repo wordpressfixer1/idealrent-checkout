@@ -236,3 +236,13 @@
 
   });
 })(jQuery);
+jQuery(document).ready(function( $ ){
+$('.idealrent_checkout_form_dropdown').click(function(){
+$(this).next().toggleClass('dd-active');
+});
+$('label').click(function(){
+ $('.dd-active').each(function(){
+  $(this).removeClass('dd-active');
+});
+});
+});
